@@ -74,7 +74,7 @@
                 <ul>
                     <li class="mb-1">
                         <nuxt-link to="/">
-                            <a class="block p-4 text-sm font-bold text-gray-400 hover:bg-blue-500 hover:text-white rounded" href="#">Home</a>
+                            <a class="block p-4 text-sm font-bold text-gray-400 hover:bg-blue-100 hover:text-white rounded" href="#">Home</a>
                         </nuxt-link>
                     </li>
                     <li class="mb-1">
@@ -84,7 +84,7 @@
                     </li>
                     <li class="mb-1">
                         <nuxt-link to="/productlist">
-                            <a class="block p-4 text-sm font-bold text-gray-400 hover:bg-indigo-500 hover:text-white rounded" href="#">Services</a>
+                            <a class="block p-4 text-sm font-bold text-gray-400 hover:bg-indigo-500 hover:text-white rounded" href="#">Product List</a>
                         </nuxt-link>
                     </li>
                     <li class="mb-1">

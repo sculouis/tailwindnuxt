@@ -1,5 +1,8 @@
 <template>
+<div class="md:flex">
   <card></card>
+  <card></card>
+</div>
 </template>
 
 <script>
