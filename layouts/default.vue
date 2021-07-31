@@ -16,9 +16,10 @@
             </button>
         </div>
         <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
-            <li><nuxt-link to="/">
-                <a class="text-sm text-gray-400 hover:text-gray-500" href="#">Home</a>
-              </nuxt-link> 
+            <li>
+                <nuxt-link to="/">
+                    <a class="text-sm text-gray-400 hover:text-gray-500" href="#">Home</a>
+                </nuxt-link>
             </li>
             <li class="text-gray-300">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
@@ -26,16 +27,20 @@
                 </svg>
             </li>
             <li>
-              <nuxt-link to="/aboutus">
-                <a class="text-sm text-gray-400 hover:text-gray-500 scale-x-110" href="#">About Us</a>
-              </nuxt-link>
-              </li>
+                <nuxt-link to="/aboutus">
+                    <a class="text-sm text-gray-400 hover:text-gray-500 scale-x-110" href="#">About Us</a>
+                </nuxt-link>
+            </li>
             <li class="text-gray-300">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
                 </svg>
             </li>
-            <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Services</a></li>
+            <li>
+                <nuxt-link to="/productlist">
+                    <a class="text-sm text-gray-400 hover:text-gray-500" href="#">Products</a>
+                </nuxt-link>
+            </li>
             <li class="text-gray-300">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
@@ -68,14 +73,14 @@
             <div>
                 <ul>
                     <li class="mb-1">
-                      <nuxt-link to="/">
-                        <a class="block p-4 text-sm font-bold text-gray-400 hover:bg-blue-500 hover:text-white rounded" href="#">Home</a>
-                      </nuxt-link>
+                        <nuxt-link to="/">
+                            <a class="block p-4 text-sm font-bold text-gray-400 hover:bg-blue-500 hover:text-white rounded" href="#">Home</a>
+                        </nuxt-link>
                     </li>
                     <li class="mb-1">
-                      <nuxt-link to="/aboutus">
-                        <a class="block p-4 text-sm font-bold text-gray-400 hover:bg-red-500 hover:text-white rounded" href="#">About Us</a>
-                      </nuxt-link>
+                        <nuxt-link to="/aboutus">
+                            <a class="block p-4 text-sm font-bold text-gray-400 hover:bg-red-500 hover:text-white rounded" href="#">About Us</a>
+                        </nuxt-link>
                     </li>
                     <li class="mb-1">
                         <a class="block p-4 text-sm font-bold text-gray-400 hover:bg-indigo-500 hover:text-white rounded" href="#">Services</a>
@@ -99,8 +104,10 @@
             </div>
         </nav>
     </div>
+    <div class="container mx-auto">
+        <Nuxt />
 
-    <Nuxt />
+    </div>
 </div>
 </template>
 
@@ -109,19 +116,19 @@
 
 <script>
 export default {
-    data(){
-      return {
-        leftMenu:false
-      }
+    data() {
+        return {
+            leftMenu: false
+        }
     },
     mounted() {
 
     },
-    methods:{
-      toggleMenu(){
-        this.leftMenu = !this.leftMenu;
-        console.log("menu icon click");
-      }
+    methods: {
+        toggleMenu() {
+            this.leftMenu = !this.leftMenu;
+            console.log("menu icon click");
+        }
     }
 
 }
