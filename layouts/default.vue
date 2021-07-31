@@ -83,7 +83,9 @@
                         </nuxt-link>
                     </li>
                     <li class="mb-1">
-                        <a class="block p-4 text-sm font-bold text-gray-400 hover:bg-indigo-500 hover:text-white rounded" href="#">Services</a>
+                        <nuxt-link to="/productlist">
+                            <a class="block p-4 text-sm font-bold text-gray-400 hover:bg-indigo-500 hover:text-white rounded" href="#">Services</a>
+                        </nuxt-link>
                     </li>
                     <li class="mb-1">
                         <a class="block p-4 text-sm font-bold text-gray-400 hover:bg-green-500 hover:text-white rounded" href="#">Pricing</a>
